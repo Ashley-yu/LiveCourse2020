@@ -1,0 +1,46 @@
+.navbar-logo a {
+  font-size: 0;
+  background: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume.png?raw=true) no-repeat;
+  width: 128px;
+  height: 38px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-link {
+  line-height: 1.2;
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar-nav {
+    background-color: #707070;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: $white;
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}
+
+.cart {
+  position: relative;
+
+  &:after {
+    content: '3';
+    position: absolute;
+    padding: 0 4.5px;
+    top: -20%;
+    right: -30%;
+    font-size: 12px;
+    text-align: center;
+    line-height: initial;
+    border-radius: 50%;
+    background-color: $primary;
+    color: $white;
+  }
+}

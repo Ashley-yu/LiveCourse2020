@@ -1,0 +1,12 @@
+.category {
+  .nav-link {
+    padding: 14px;
+  }
+}
+
+.description {
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    right: 0;
+  }
+}

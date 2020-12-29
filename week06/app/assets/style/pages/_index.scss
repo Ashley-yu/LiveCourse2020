@@ -1,0 +1,23 @@
+.banner {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true);
+  border-radius: 0;
+
+  &-container {
+    padding: 15.125rem 0;
+  }
+
+  &-button {
+    border: 2px solid $white;
+    font-size: $h3-font-size;
+  }
+}
+
+.subscribe {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true);
+  padding-top: 312px;
+  padding-bottom: 112px;
+
+  input {
+    padding: 21px;
+  }
+}
