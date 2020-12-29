@@ -1,0 +1,4 @@
+.modal-image {
+  @include size(141px, 141px);
+  object-fit: cover;
+}

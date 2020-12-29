@@ -1,0 +1,27 @@
+.nav-item.active {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: $primary;
+  }
+
+  a {
+    color: $primary;
+  }
+}
+
+.sidebar {
+  position: static;
+  height: 100%;
+
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    height: 100vh;
+  }
+}

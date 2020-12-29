@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Week 5 - Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="bg-secondary col-md-4 col-lg-3 py-5 px-0
+                  d-flex flex-column sidebar">
+        <h1 class="logo mb-5 px-5">
+          <a href="assignment.html">
+            ANSWER
+          </a>
+        </h1>
+        <ul class="navbar-nav list-unstyled font-weight-bold">
+          <li class="nav-item mb-2">
+            <a class="nav-link px-5" href="#">
+              <span class="material-icons mr-3">insert_chart</span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link px-5" href="#">
+              <span class="material-icons mr-3">forum</span>
+              Question
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link px-5" href="assignment.html">
+              <span class="material-icons mr-3">assignment</span>
+              Assignment
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link px-5" href="#">
+              <span class="material-icons mr-3">video_library</span>
+              Course
+            </a>
+          </li>
+          <li id="admin-link" class="nav-item mb-2">
+            <a class="nav-link px-5" href="admin.html">
+              <span class="material-icons mr-3">supervisor_account</span>
+              Admin
+            </a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link px-5" href="#">
+              <span class="material-icons mr-3">settings</span>
+              Settings
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center mt-md-auto mt-5 px-5">
+          <img src="./assets/images/andychen.jpeg" alt="profile image" class="rounded-circle profile-image mr-3">
+          <div>
+            <p class="font-weight-bold mb-1">Andy Chen</p>
+            <p class="font-size-sm text-muted">andy0401@mail.com</p>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Page Content -->
+      <div class="col-md-8 col-lg-9 p-5 ml-auto">
+        
+<header class="d-flex align-items-center mb-5">
+    <h2 class="h4 mr-7">Assignment</h2>
+    <div class="dropdown">
+        <button class="btn mr-auto mr-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            All Courses
+            <span class="material-icons text-primary">expand_more</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">HTML</a>
+            <a class="dropdown-item" href="#">CSS</a>
+            <a class="dropdown-item" href="#">JavaScript</a>
+        </div>
+    </div>
+    <ul class="list-unstyled d-flex align-items-center mb-0 ml-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <span class="material-icons">search</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <span class="material-icons">notifications_active</span>
+            </a>
+        </li>
+    </ul>
+</header>
+<main>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="dropdown">
+            <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All (4)
+                <span class="material-icons text-primary">expand_more</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Chapter Assignment 1</a>
+                <a class="dropdown-item" href="#">Chapter Assignment 2</a>
+                <a class="dropdown-item" href="#">Final Assignment</a>
+            </div>
+        </div>
+        <p class="text-light font-size-xs">2 comments</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-5 col-xl-4 pr-lg-0 mb-3 mb-lg-0">
+            <ul class="list-group list-unstyled" role="tablist">
+                <li>
+                    <a class="list-group-item list-group-item-action px-2 active"
+                       data-toggle="list" href="#list-1"
+                       role="tab" aria-controls="list-1">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="font-size-xs">Chapter Assignment 2</p>
+                            <p class="font-size-xs">4 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <h6 class="font-weight-bold">Please check this file…</h6>
+                            <p class="font-size-xs text-light">Emily Wang</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item list-group-item-action px-2"
+                       data-toggle="list" href="#list-2"
+                       role="tab" aria-controls="list-2">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="font-size-xs">Chapter Assignment 1</p>
+                            <p class="font-size-xs">12 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <h6 class="font-weight-bold text-dark">My Homework</h6>
+                            <p class="font-size-xs text-light">David Xu</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item list-group-item-action px-2"
+                       data-toggle="list" href="#list-3"
+                       role="tab" aria-controls="list-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="font-size-xs">Final Assignment</p>
+                            <p class="font-size-xs">18 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <h6 class="font-weight-bold text-dark">Have a problem with this…</h6>
+                            <p class="font-size-xs text-light">Tony Wei</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="list-group-item list-group-item-action px-2"
+                       data-toggle="list" href="#list-4"
+                       role="tab" aria-controls="list-4">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="font-size-xs">Final Assignment</p>
+                            <p class="font-size-xs">19 hrs ago</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-baseline">
+                            <h6 class="font-weight-bold text-dark">Did I do it right?</h6>
+                            <p class="font-size-xs text-light">Christina Lin</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-7 col-xl-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-1"
+                     role="tabpanel" aria-labelledby="list-1">
+                    <div class="card mb-3">
+                        <div class="card-header bg-secondary">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="font-size-xs mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                                    <h6 class="font-weight-bold">Please check this file for me, thanks!</h6>
+                                </div>
+                                <button class="btn p-0">
+                                    <span class="material-icons">more_vert</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body pr-5">
+                            <ul class="list-unstyled m-0">
+                                <li class="media">
+                                    <img src="./assets/images/emilywang.jpeg" alt="profile image" class="rounded-circle profile-image mr-2">
+                                    <div class="media-body">
+                                        <p class="font-weight-bold">Emily Wang</p>
+                                        <p class="font-size-xs text-light mb-3">10:38 AM (4 hours ago)</p>
+                                        <p class="font-size-sm mb-3">
+                                            Hi Teacher, the attached file is my homework of chapter 2.
+                                            And here comes a question: Why in the following code the height of the <code>div</code> is bigger than the height of the <code>img</code> ?
+                                            There is a gap below the image,
+                                            but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                                        </p>
+                                        <a href="#" class="btn btn-secondary border font-weight-bold py-2 px-3">
+                                            <span class="material-icons mr-2">attach_file</span>
+                                            HW-2-David.zip
+                                        </a>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li class="media">
+                                    <img src="./assets/images/andychen.jpeg" alt="profile image" class="rounded-circle profile-image mr-2">
+                                    <div class="media-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <p class="font-weight-bold">Andy Chen (You)</p>
+                                                <p class="font-size-xs text-light mb-3">13:24 AM (1 hours ago)</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <a href="#" class=" mr-4">
+                                                    <span class="material-icons">star_border</span>
+                                                </a>
+                                                <a href="">
+                                                    <span class="material-icons">create</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p class="font-size-sm mb-4">
+                                            Hi David, by default, an image is rendered inline,
+                                            like a letter so it sits on the same line that a, b, c and d sit on.
+                                            There is space below that line for the descenders you find on letters like g, j, p and q.
+                                        </p>
+                                        <p class="font-size-sm mb-4">
+                                            You can:
+                                        </p>
+                                        <ul class="font-size-sm list-disc">
+                                            <li>
+                                                adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or
+                                            </li>
+                                            <li>
+                                                change the <code>display</code> so it isn’t inline.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="list-unstyled m-0 d-flex">
+                    <li>
+                        <a class="btn" href="#" role="button">
+                            <span class="material-icons">navigate_before</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn" href="#" role="button">
+                            <span class="material-icons">navigate_next</span>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="btn btn-outline-primary py-2 px-5 mr-3">
+                        Mark as read
+                    </button>
+                    <button class="btn btn-primary py-2 px-5"
+                            data-toggle="collapse" data-target="#replyEditor"
+                            aria-expanded="false" aria-controls="replyEditor">
+                        Reply
+                    </button>
+                </div>
+            </div>
+            <div id="replyEditor" class="collapse border bg-white replyEditor">
+                <ul class="list-unstyled d-flex align-items-center flex-wrap
+                            bg-secondary border py-3 px-4 m-0">
+                    <li class="mr-4">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle font-weight-bold px-0"
+                                    type="button" id="dropdownTextButton"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                Body Text
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownTextButton">
+                                <a class="dropdown-item h1" href="#">Heading 1</a>
+                                <a class="dropdown-item h2" href="#">Heading 2</a>
+                                <a class="dropdown-item h3" href="#">Heading 3</a>
+                                <a class="dropdown-item h4" href="#">Heading 4</a>
+                                <a class="dropdown-item h5" href="#">Heading 5</a>
+                                <a class="dropdown-item h6" href="#">Heading 6</a>
+                                <a class="dropdown-item" href="#">Body Text</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mr-4">
+                        <a href="#">
+                            <span class="material-icons">format_bold</span>
+                        </a>
+                    </li>
+                    <li class="mr-4">
+                        <a href="#">
+                            <span class="material-icons">format_italic</span>
+                        </a>
+                    </li>
+                    <li class="mr-4">
+                        <a href="#">
+                            <span class="material-icons">format_list_bulleted</span>
+                        </a>
+                    </li>
+                    <li class="mr-4">
+                        <a href="#">
+                            <span class="material-icons">format_list_numbered</span>
+                        </a>
+                    </li>
+                    <li class="mr-4">
+                        <a href="#">
+                            <span class="material-icons">insert_photo</span>
+                        </a>
+                    </li>
+                    <li class="mr-4">
+                        <a href="#">
+                            <span class="material-icons">insert_link</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">code</span>
+                        </a>
+                    </li>
+                </ul>
+                <textarea rows="5"
+                          class="w-100 border-0 py-3 px-4"
+                          placeholder="Reply an answer…"
+                ></textarea>
+                <div class="text-right my-3 mx-4">
+                    <button class="btn btn-outline-primary py-2 px-5 mr-3"
+                            data-toggle="collapse" data-target="#replyEditor"
+                            aria-expanded="false" aria-controls="replyEditor">
+                        Cancel
+                    </button>
+                    <button class="btn btn-primary py-2 px-5">
+                        Reply
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

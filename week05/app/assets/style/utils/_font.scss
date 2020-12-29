@@ -1,0 +1,25 @@
+.font-size-base {
+  font-size: $font-size-base;
+}
+
+.font-size-sm {
+  font-size: $font-size-sm;
+}
+
+.font-size-xs {
+  font-size: $font-size-xs;
+}
+
+.text-primary-lighter {
+  color: $primary-lighter;
+}
+
+.list-disc {
+  list-style: disc;
+}
+
+code {
+  color: $primary;
+  background-color: $secondary;
+  padding: 2px 4px;
+}

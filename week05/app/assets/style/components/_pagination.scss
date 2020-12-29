@@ -1,0 +1,19 @@
+.pagination {
+  .page-item {
+    &.active {
+      a {
+        color: $white;
+        background-color: $primary;
+        pointer-events: none;
+      }
+    }
+
+    a:hover {
+      background-color: $secondary;
+    }
+  }
+}
+
+.page-link {
+  color: $black;
+}

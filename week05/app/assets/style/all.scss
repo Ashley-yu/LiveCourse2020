@@ -1,0 +1,31 @@
+// Vendors
+@import "../../../node_modules/bootstrap/scss/functions";
+@import 'vendors/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+// Utils
+@import 'utils/variables';
+@import 'utils/mixin';
+@import 'utils/keyframes';
+@import 'utils/font';
+
+// Base
+@import 'base/basic';
+@import 'base/icon';
+
+// Pages
+@import 'pages/assignment';
+@import 'pages/admin';
+
+// Components
+@import 'components/header';
+@import 'components/profile';
+@import 'components/sidebar';
+@import 'components/table';
+@import 'components/pagination';
+@import 'components/modal';
+
+// Layout
+
+// Vendors-extensions

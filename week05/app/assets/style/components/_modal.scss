@@ -1,0 +1,10 @@
+.modal {
+  overflow-y:auto;
+}
+
+.collapse-btn.collapsed {
+  span {
+    transition: $transition-duration;
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,19 @@
+.table {
+  th, td {
+    white-space: nowrap;
+    vertical-align: middle;
+    border-color: $primary-lighter;
+  }
+
+  thead th {
+    border-bottom: 1px solid $black;
+  }
+}
+
+.table-hover tbody tr {
+  transition: $transition-duration;
+
+  &:hover {
+    background-color: $secondary;
+  }
+}
