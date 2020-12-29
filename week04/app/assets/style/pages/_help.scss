@@ -1,0 +1,57 @@
+.help {
+  padding-top: 5rem;
+  padding-bottom: 19rem;
+  @include screen-md {
+    padding-top: 2.5rem;
+    padding-bottom: 6.5rem;
+  }
+  @include screen-sm {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem; 
+  }
+
+  &-title {
+    font-size: 2rem; 
+    margin-bottom: 2.25rem;
+    @include screen-sm {
+      font-size:1.25rem; 
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &-list li {
+    margin-bottom: 2.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include screen-sm {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &-question {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    @include screen-sm {
+      font-size: 1rem;
+      margin-bottom: 0.5rem; 
+    }
+  }
+
+  &-answer {
+    font-size: 1rem;
+    margin-left: 95px;
+    @include screen-md {
+      margin-left: 60px;
+    }
+    @include screen-sm {
+      font-size: 0.875rem;
+      margin-left: 0;
+
+      &:nth-child(3) {
+        margin-top: 21px;
+      }
+    }
+  }
+}
+

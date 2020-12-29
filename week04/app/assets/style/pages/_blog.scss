@@ -1,0 +1,512 @@
+.news-header {
+  @include screen-sm {
+    display: none;
+  }
+
+  &.detail {
+    @include screen-sm {
+      display: block;
+
+      .news-navbar-list {
+        li {
+          margin-right: 1.5rem;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .icon-search {
+        display: none;
+      }
+    }
+  }
+}
+
+.news-navbar-list {
+  li {
+    font-size: 1.25rem;
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include screen-md {
+      font-size: 1rem;
+      margin-right: 2rem;
+    }
+  }
+
+  a {
+    padding: 12px 0;
+    transition: $transition-duration;
+    &:hover {
+      text-shadow: -0.1rem 0.1rem 0.5rem rgba(255,255,255,0.8);
+    }
+
+    @include screen-md {
+      padding: 16px 0;
+    }
+  }
+}
+
+.icon-search {
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.blog {
+  padding-top: 5.125rem;
+  @include screen-md {
+    padding-top: 2.5rem;
+  }
+  @include screen-sm {
+    padding-top: 1.5rem;
+  }
+
+  &-list {
+    margin-bottom: 6.25rem;
+    @include screen-md {
+      margin-bottom: 6.5rem;
+    }
+    @include screen-sm {
+      margin-bottom: 39px;
+    }
+
+    li {
+      margin-bottom: 3.75rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include screen-md {
+        margin-bottom: 2rem;
+      }
+
+      @include screen-sm {
+        flex-direction: column;
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &-image {
+    width: 57%;
+    object-fit: cover;
+
+    @include screen-md {
+      width: 48%;
+      height: 192px;
+    }
+
+    @include screen-sm {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-content {
+    width: 41%;
+    position: relative;
+
+    @include screen-md {
+      width: 48%;
+    }
+
+    @include screen-sm {
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-size: 2rem;
+
+    @include screen-md {
+      font-size: 1.25rem;
+    }
+
+    @include screen-sm {
+      font-size: 1rem;
+    }
+  }
+
+  &-info {
+    margin-bottom: 1.5rem;
+
+    @include screen-md {
+      margin-bottom: 1rem;
+    }
+
+    @include screen-sm {
+      margin-bottom: 0;
+    }
+  }
+
+  &-sub-title {
+    font-size: 1.25rem;
+
+    @include screen-md {
+      font-size: 1rem;
+    }
+
+    @include screen-sm {
+      font-size: 0.875rem;
+    }
+  }
+
+  &-date {
+    font-size: 1rem;
+
+    @include screen-md {
+      font-size: 0.875rem;
+    }
+  }
+
+  &-text {
+    font-size: 1.25rem;
+    color: $text-secondary-color;
+
+    @include screen-md {
+      font-size: 0.875rem;
+      position: relative;
+      //height: 9em; // 控制顯示行數
+      overflow: hidden;
+    }
+
+    @include screen-sm {
+      display: none;
+    }
+  }
+
+  &-more {
+    font-size: 2.25rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    &:hover {
+      text-shadow: -0.1rem 0.1rem 0.5rem rgba(0,0,0,0.4);
+    }
+
+    a {
+      @include screen-md {
+        background-color: $white-color;
+        font-size: 0.875rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 4em;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
+
+.blog-detail {
+  padding-top: 0.5rem;
+
+  &-breadcrumb {
+    margin-bottom: 17px;
+
+    @include screen-md {
+      font-size: 14px;
+      margin-bottom: 0.5rem;
+    }
+
+    @include screen-sm {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: $black-color;
+
+      &:hover {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+
+    li {
+      margin-left: 0.25rem;
+      display: flex;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:after {
+        content: ' /';
+      }
+
+      &:last-child::after {
+        content: none
+      }
+    }
+  }
+
+  &-content {
+    width: 70%;
+
+    @include screen-md {
+      width: 74%;
+    }
+
+    @include screen-sm {
+      width: 100%;
+    }
+  }
+
+  &-content-tags {
+    font-size: 1.5rem;
+
+    @include screen-md {
+      font-size: 1rem;
+    }
+
+    @include screen-sm {
+      font-size: 0.875rem;
+    }
+
+    li {
+      margin-right: 1rem;
+
+      @include screen-md {
+        margin-right: 0.5rem;
+      }
+
+      @include screen-sm {
+        margin-right: 0.25rem;
+      }
+
+      a {
+        color: $secondary-color;
+
+        &:hover {
+          border-radius: 4px;
+          background-color: lighten($text-color, 60%);
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 3rem;
+    margin-bottom: 5px;
+
+    @include screen-md {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+
+    @include screen-sm {
+      font-size: 1.25rem;
+      color: $primary-color;
+    }
+  }
+
+  &-sub-title {
+    font-size: 1.75rem;
+    margin-bottom: 23px;
+
+    @include screen-md {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    @include screen-sm {
+      font-size: 0.875rem;
+      margin-bottom: 19px;
+    }
+  }
+
+  &-date {
+    color: #6C6C6C;
+
+    @include screen-md {
+      font-size: 0.875rem;
+    }
+  }
+
+  &-content-image {
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    @include screen-md {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-content-text {
+    margin-bottom: 2.25rem;
+    font-size: 1.25rem;
+    color: rgba(#0A0A0A, 0.6);
+
+    @include screen-md {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  &-share {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #707070;
+    margin-top: 14px;
+    margin-bottom: 1.5rem;
+
+    @include screen-md {
+      margin-bottom: 1rem;
+      margin-top: 3px;
+    }
+
+    @include screen-sm {
+      margin-bottom: 0.5rem;
+      margin-top: 7px;
+    }
+
+    li {
+      margin-right: 1rem;
+
+      a {
+        transition: $transition-duration;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    img {
+      @include screen-md {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-option {
+    font-size: 19px;
+    margin-bottom: 304px;
+    align-items: center;
+
+    @include screen-md {
+      font-size: 1rem;
+      margin-bottom: 6.5rem;
+    }
+
+    @include screen-sm {
+      font-size: 0.875rem;
+      margin-bottom: 39px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    a {
+      color: $black-color;
+      &:hover {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-undo {
+    @include screen-sm {
+      margin-bottom: 10.5px;
+    }
+  }
+
+  &-redo {
+    flex-direction: row-reverse;
+
+    @include screen-sm {
+      flex-direction: row;
+    }
+  }
+
+  &-undo-image {
+    margin-right: 0.5rem;
+    @include screen-md {
+      width: 20px;
+      height: 17.5px;
+    }
+  }
+
+  &-redo-image {
+    margin-left: 0.5rem;
+    @include screen-md {
+      width: 20px;
+      height: 17.5px;
+    }
+
+    @include screen-sm {
+      margin-right: 0.5rem;
+      margin-left: 0;
+    }
+  }
+
+  &-tags {
+    width: 28%;
+
+    @include screen-md {
+      width: 23%;
+    }
+
+    @include screen-sm {
+      width: 100%;
+    }
+  }
+
+  &-tags-title {
+    font-size: 1.75rem;
+
+    @include screen-md {
+      font-size: 1.25rem;
+    }
+
+    @include screen-sm {
+      margin-bottom: 11px;
+    }
+
+    img {
+      @include screen-md {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-tags-list {
+    font-size: 1.5rem;
+
+    @include screen-md {
+      font-size: 1rem;
+    }
+
+    @include screen-sm {
+      margin-bottom: 3.5rem;
+    }
+
+    li {
+      margin-right: 1.5rem;
+
+      @include screen-md {
+        margin-right: 1rem;
+      }
+
+      @include screen-sm {
+        margin-right: 0.5rem;
+      }
+
+      a {
+        color: $secondary-color;
+
+        &:hover {
+          border-radius: 4px;
+          background-color: lighten($text-color, 60%);
+        }
+      }
+    }
+  }
+}

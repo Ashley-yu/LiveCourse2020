@@ -1,0 +1,219 @@
+// Banner
+.banner {
+  margin-bottom: 5.5rem;
+  @include screen-md {
+    margin-bottom: 2.5rem;
+  }
+  @include screen-sm {
+    margin-bottom: 1.875rem;
+  }
+
+  &-left, &-right {
+    height: 309px;
+    width: 49%;
+    @include screen-md {
+      width: 50%;
+    }
+    @include screen-sm {
+      height: 144px;
+    }
+  }
+
+  &-left-optical {
+    background-image: url(../images/products/banner-1.png);
+  }
+
+  &-right-optical {
+    background-image: url(../images/products/banner-2.png);
+  }
+
+  &-left-sunglasses {
+    background-image: url(../images/products/banner-3.png);
+  }
+
+  &-right-sunglasses {
+    background-image: url(../images/products/product-2-color.png);
+  }
+}
+
+// Category
+.category {
+  font-size: 2.625rem;
+  @include screen-lg {
+    font-size: 1.75rem;
+  }
+  @include screen-sm {
+    font-size: 0.875rem;
+  }
+
+  li {
+    border: 1px solid $border-color;
+    width: 24%;
+    @include screen-md {
+      width: 33.3%;
+    }
+  }
+
+  a {
+    padding: 1.5rem;
+    position: relative;
+    transition: $transition-duration;
+
+    @include screen-md {
+      padding: 1rem;
+    }
+    @include screen-sm {
+      padding: 0.5rem;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &.active {
+      border-bottom: solid 16px $secondary-color;
+      @include screen-md {
+        border-bottom: solid 8px $secondary-color;
+      }
+      @include screen-sm {
+        border-bottom: solid 1px $secondary-color;
+      }
+    }
+  }
+
+  h5 {
+    color: $black-color;
+
+    img {
+      margin-right: 0.5rem;
+      @include screen-md {
+        width: 32px;
+      }
+      @include screen-sm {
+        width: 14px;
+      }
+    }
+  }
+}
+
+// Products
+.products {
+
+  &.opticalType {
+    @include screen-md {
+      margin-bottom: 2.125rem;
+    }
+    @include screen-sm {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &.sunglassesType {
+    margin-bottom: 12rem;
+    @include screen-md {
+      margin-bottom: 2.125rem;
+    }
+    @include screen-sm {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-title {
+    font-size: 2.625rem;
+    @include screen-md {
+      font-size: 2rem;
+    }
+    @include screen-sm {
+      font-size: 1.25rem;
+    }
+  }
+
+  &-subTitle {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    @include screen-md {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    @include screen-sm {
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  &-item {
+    &.optical {
+      width: 24%;
+      margin-bottom: 6.5rem;
+      @include screen-md {
+        width: 48%;
+        margin-bottom: 4.5rem;
+      }
+      @include screen-sm {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      img {
+        height: 164px;
+        width: 100%;
+        object-fit: cover;
+        @include screen-sm {
+          height: 166px;
+        }
+      }
+    }
+
+    &.sunglasses {
+      width: 31.5%;
+      margin-bottom: 7rem;
+      @include screen-md {
+        width: 48%;
+        margin-bottom: 4.5rem;
+      }
+      @include screen-sm {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      img {
+        height: 224px;
+        width: 100%;
+        object-fit: cover;
+        @include screen-sm {
+          height: 166px;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      @include screen-sm {
+        font-size: 1rem;
+      }
+    }
+
+    .color-block {
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+      @include screen-sm {
+        width: 16px;
+        height: 16px;
+      }
+
+      &.dark {
+        background-color: $block-dark-color;
+      }
+
+      &.light {
+        background-color: $block-light-color;
+        margin-left: 0.5rem;
+        @include screen-sm {
+          margin-left: 0.25rem;
+        }
+      }
+    }
+  }
+}

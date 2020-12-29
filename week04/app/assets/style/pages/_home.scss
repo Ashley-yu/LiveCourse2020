@@ -1,0 +1,372 @@
+/* Header */
+.header {
+  background-image: url(../images/home/banner.png);
+  height: 840px;
+  @include screen-sm {
+    background-image: url(../images/home/banner-sm.png);
+    height: 394px;
+  }
+
+  &-content {
+    height: 100%;
+    font-size: 2.25rem;
+    @include screen-md {
+      font-size: 1.25rem;
+    }
+    @include screen-sm {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* About */
+.about {
+  h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    @include screen-md {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  img {
+    margin-bottom: 2.5rem;
+    @include screen-md {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-list {
+    justify-content: space-between;
+    @include screen-md {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    li {
+      width: 20%;
+      @include screen-md {
+        width: 34%;
+        margin: 0 1rem 2.5rem 1rem;
+        &:nth-child(1), &:nth-child(4) {
+          order: 1;
+        }
+      }
+      @include screen-sm {
+        width: 100%;
+        &:nth-child(4) {
+          margin-bottom: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+/* Product */
+.product-list {
+  li{
+    margin-bottom: 2rem;
+    @include screen-md {
+      margin-bottom: 0.5rem;
+    }
+    @include screen-sm {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+      @include screen-md {
+        flex-direction: row;
+      }
+
+      h4 {
+        margin-left: 0;
+        margin-right: 1.875rem;
+        @include screen-md {
+          margin-left: 1.875rem;
+          margin-right: 0;
+        }
+        @include screen-sm {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 50%;
+    @include screen-sm {
+      width: 100%;
+    }
+  }
+
+  h4 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-left: 1.875rem;
+    @include screen-md {
+      font-size: 1.75rem;
+    }
+    @include screen-sm {
+      color: $white-color;
+      margin: 0;
+      position: absolute;
+    }
+
+    img {
+      margin-right: 0.5rem;
+      @include screen-md {
+        width: 32px;
+      }
+    }
+  }
+}
+
+.product-iconM {
+  display: none;
+  @include screen-sm {
+    display: block;
+  }
+}
+
+.product-icon {
+  @include screen-sm {
+    display: none;
+  } 
+}
+
+/* Cobranded */
+.cobranded {
+  background-image: url(../images/home/bg.png);
+
+  h4 {
+    font-size: 4.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    @include screen-md {
+      font-size: 2rem;
+    }
+  }
+
+  &-img-wrap {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255,255,255,0.5);
+    }
+  }
+
+  &-list {
+    justify-content: space-between;
+    @include screen-sm {
+      flex-direction: column;
+    }
+
+    li {
+      position: relative;
+      width: 48%;
+      @include screen-sm {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      &:last-child {
+        @include screen-sm {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+/* Recommend */
+.recommend {
+  padding-bottom: 4rem;
+  @include screen-md {
+    padding-bottom: 12px;
+  }
+  @include screen-sm {
+    padding-bottom: 1rem;
+  }
+
+  &-list {
+    justify-content: space-between;
+    @include screen-md {
+      flex-wrap: wrap;
+    }
+    @include screen-sm {
+      flex-direction: column;
+    }
+
+    li {
+      width: 23%;
+      @include screen-md {
+        width: 48%;
+        margin-bottom: 1.75rem;
+      }
+      @include screen-sm {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    img {
+      @include screen-md {
+        width: 100%;
+      }
+    }
+  }
+
+  &-textArea {
+    padding: 1rem;
+    border: 1px solid #DEE2E6;
+  }
+
+  &-name {
+    font-size: 0.875rem;
+    margin-bottom: 7px;
+    @include screen-md {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-text {
+    margin-bottom: 10px;
+    @include screen-md {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-time {
+    font-size: 0.875rem;
+  }
+}
+
+/* Contact */
+.contact .container {
+  max-width: 730px;
+  @include screen-md {
+    max-width: 450px;
+  }
+  @include screen-sm {
+    max-width: 345px;
+  }
+}
+
+.contact {
+  h2 {
+    margin-bottom: 1.5rem;
+    @include screen-md {
+      margin-bottom: 1rem;
+    }
+    @include screen-sm {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    @include screen-md {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    @include screen-sm {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-form {
+    @include screen-md {
+      font-size: 0.875rem;
+    }
+
+    &-group {
+      margin-bottom: 1rem;
+      @include screen-md {
+        margin-bottom: 0.5rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.25rem;
+        @include screen-md {
+          margin-bottom: 0.125rem;
+        }
+      }
+
+      input,
+      textarea {
+        font-size: 1rem;
+        padding: 0.875rem 1rem;
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $black-color;
+        @include screen-md {
+          font-size: 0.875rem;
+          padding: 0.5rem 0.75rem;
+        }
+        &:focus {
+          outline: 1px solid $secondary-color;
+        }
+      }
+    }
+
+    &-privacy {
+      margin-bottom: 2.5rem;
+      @include screen-md {
+        margin-bottom: 1.25rem;
+        display: flex;
+      }
+      @include screen-sm {
+        margin-bottom: 1.5rem;
+      }
+
+      label {
+        @include screen-md {
+          margin-left: 2.37px;
+        }
+      }
+    }
+
+    &-button {
+      input {
+        padding: 1rem 9rem;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        transition: $transition-duration;
+        @include screen-md {
+          padding: 0.5rem 4.875rem;
+          font-size: 0.875rem;
+        }
+        @include screen-sm {
+          padding: 0.5rem 3.375rem;
+        }
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          background-color: black;
+        }
+      }
+    }
+  }
+}

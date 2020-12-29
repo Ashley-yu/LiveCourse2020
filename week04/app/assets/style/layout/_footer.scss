@@ -1,0 +1,160 @@
+.footer {
+  padding-top: 2.25rem;
+  padding-bottom: 1.75rem;
+  @include screen-md {
+    padding: 2.5rem 0;
+  }
+  @include screen-sm {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    transition: $transition-duration;
+    &:hover {
+      text-shadow: -0.1rem 0.1rem 0.5rem rgba(255,255,255,0.8);
+    }
+  }
+
+  &-content {
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 1.5rem;
+    @include screen-md {
+      padding-bottom: 1rem;
+    }
+    @include screen-sm {
+      margin-bottom: 1.125rem;
+    }
+  }
+
+  &-list {
+    margin-bottom: 2.25rem;
+    @include screen-md {
+      margin-bottom: 1.625rem;
+    }
+    @include screen-sm {
+       display: none;
+    }
+
+    li {
+      margin-right: 3rem;
+      @include screen-md {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+
+  &-contact {
+    font-size: 2.25rem;
+    @include screen-md {
+      font-size: 1.25rem;
+    }
+    @include screen-sm {
+      font-size: 1rem;
+    }
+
+    li {
+      margin-bottom: 1.25rem;
+      @include screen-md {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    p {
+      margin-left: 0.75rem;
+      @include screen-md {
+        margin-left: 0.5rem;
+      }
+      @include screen-sm {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &-imgWrap {
+    width: 48px;
+    @include screen-md {
+      width: 32px;
+    }
+    @include screen-sm {
+      width: 20px;
+    }
+  }
+
+  &-social {
+    li {
+      margin-left: 2rem;
+      @include screen-md {
+        margin-left: 1.5rem;
+      }
+    }
+
+    a {
+      transition: $transition-duration;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    img {
+      @include screen-md {
+        height: 24px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &-copyright {
+    justify-content: space-between;
+    @include screen-sm {
+      flex-direction: column;
+      position: relative;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      @include screen-sm {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    p {
+      margin-left: 2.375rem;
+      @include screen-md {
+        margin-left: 0;
+      }
+      @include screen-sm {
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      margin-left: 3.875rem;
+      @include screen-md {
+        margin-left: 1.5rem;
+      }
+      @include screen-sm {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    img {
+      @include screen-md {
+        display: none;
+      }
+      @include screen-sm {
+        display: block;
+        width: 46px;
+        position: absolute;
+        right: 0;
+        bottom: 0.25rem;
+      }
+    }
+  }
+}

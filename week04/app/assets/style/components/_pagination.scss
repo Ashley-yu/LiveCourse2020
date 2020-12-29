@@ -1,0 +1,56 @@
+// Pagination
+.pagination {
+  margin-bottom: 9.75rem;
+  @include screen-md {
+    margin-bottom: 6.5rem;
+  }
+  @include screen-sm {
+    margin-bottom: 3.5rem;
+  }
+
+  li {
+    border: solid 1px $pagination-border-color;
+  }
+
+  a {
+    color: $black-color;
+    height: 100%;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+
+    &.active {
+      background-color: $black-color;
+      color: $white-color;
+    }
+  }
+
+  &-text a {
+    font-size: 19px;
+    padding: 10px 12px;
+    @include screen-sm {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+
+  &-number a {
+    font-size: 18px;
+    padding: 10px 16px;
+    @include screen-sm {
+      font-size: 11px;
+      padding: 8px 10px;
+    }
+  }
+
+  &.sunglassesPage {
+    display: none;
+    @include screen-md {
+      display: flex;
+    }
+    @include screen-sm {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

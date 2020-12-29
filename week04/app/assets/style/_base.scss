@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #FFFFFF;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bolder;
+  @include screen-md {
+    font-size: 3rem;
+  }
+  @include screen-sm {
+    font-size: 2rem;
+  }
+}

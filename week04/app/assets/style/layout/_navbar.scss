@@ -1,0 +1,49 @@
+.navbar {
+  padding: 1.875rem 5.5rem;
+  justify-content: space-between;
+  @include screen-md {
+    padding: 1.875rem 2.5rem;
+  }
+  @include screen-sm {
+    padding: 0;
+    padding-top: 10px;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  &-list {
+    font-size: 1.25rem;
+    @include screen-sm {
+      flex-wrap: wrap;
+      width: 101%;
+      margin-top: 10.86px;
+    }
+
+    li {
+      margin-left: 4rem;
+      @include screen-md {
+        margin-left: 2.5rem;
+      }
+      @include screen-sm {
+        width: 50%;
+        border: 1px solid #FFFFFF;
+        margin: 0;
+      }
+    }
+
+    a {
+      transition: $transition-duration;
+      &:hover {
+        text-shadow: -0.1rem 0.1rem 0.5rem rgba(255,255,255,0.8);
+      }
+    }
+  }
+}
+
+.logo {
+  width: 80px;
+  line-height: 48px;
+  background: url(https://hexschool.github.io/webLayoutTraining1st/week3/logo.png) no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
