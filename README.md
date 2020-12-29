@@ -104,7 +104,7 @@
 ## 第六週 - 格線系統
 [設計稿](https://xd.adobe.com/view/dc5ebe5c-3e56-4981-a010-158b5ded0e72-890d/grid/)
 
-[後台網站](https://ashley-yu.github.io/LiveCourse2020/week06/dist/index.html)
+[香水電商](https://ashley-yu.github.io/LiveCourse2020/week06/dist/index.html)
 >- Bootstrap 4 格線系統
 >	- .container、.row、.col 1~12
 >- 整合 Bootstrap 4 SCSS 與自己的 SCSS
@@ -119,3 +119,12 @@
 >- OOCSS 設計模式 [參考](https://medium.com/@alice0050722/bootstrap-%E8%A8%AD%E8%A8%88%E6%A8%A1%E5%BC%8F-oocss-ba27173f578b)
 >	- 容器和內容分離
 >	- 樣式和結構分離
+
+## 第七週 - 視差滾動
+[設計稿](https://xd.adobe.com/view/08ed586b-17ef-45c1-525f-be5513e81e53-7edc/)
+
+[香水電商](https://ashley-yu.github.io/LiveCourse2020/week07/dist/index.html)
+>- animation
+>- transform
+>- opacity
+>- [aos] (https://michalsnik.github.io/aos/)
