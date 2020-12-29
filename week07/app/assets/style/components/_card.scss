@@ -1,0 +1,54 @@
+.card {
+  &:hover {
+    .card-img {
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &.card-cover {
+    pointer-events: none;
+    .card-img {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  margin: 0;
+  font-size: $h4-font-size;
+}
+
+.card-text {
+  font-weight: $font-weight-light;
+}
+
+.card-img {
+  position: relative;
+  &:after {
+    content: 'Sold out';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($black, .3);
+    color: $white;
+    font-size: 24px;
+    opacity: 0;
+  }
+}
+
+.card-icon {
+  &:hover {
+    transform: scale(1.2);
+  }
+}
