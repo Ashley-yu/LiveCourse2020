@@ -127,4 +127,4 @@
 >- animation
 >- transform
 >- opacity
->- [aos] (https://michalsnik.github.io/aos/)
+>- [aos](https://michalsnik.github.io/aos/)
