@@ -1,0 +1,78 @@
+---
+title: Week 6 - Perfume Shop
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+<header class="bg-primary category mb-md-4 d-none d-md-block">
+    <div class="container">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link h5 text-white pl-0" href="#">
+                    CHANEL
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link h5 text-white" href="#">
+                    Jo Malone
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link h5 text-white" href="#">
+                    Curology
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link h5 text-white" href="#">
+                    Dior
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link h5 text-white" href="#">
+                    Chloe
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link h5 text-white" href="#">
+                    ZARA
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main>
+    <section class="py-7 py-md-10">
+        <div class="container mb-11 mb-md-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <img class="img-fluid mb-5 mb-md-0" src="assets/images/login1.jpg" alt="login">
+                </div>
+                <div class="col-md-4">
+                    <h2 class="font-weight-bold mt-1 mt-md-0">Log in</h2>
+                    <form class="pt-1" action="account.html">
+                        <div class="form-group mb-4">
+                            <label for="email" class="mb-1">帳號</label>
+                            <input type="email" class="form-control py-2" id="email" aria-describedby="emailHelp" placeholder="email@example.com">
+                        </div>
+                        <div class="form-group mb-6">
+                            <label for="password" class="mb-1">密碼</label>
+                            <input type="password" class="form-control py-2" id="password" placeholder="Password">
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center pt-1">
+                            <p class="text-primary">忘記密碼</p>
+                            <ul class="list-unstyled d-flex m-0">
+                                <li>
+                                    <button class="btn btn-outline-primary mr-2">註冊</button>
+                                </li>
+                                <li>
+                                    <button type="submit" class="btn btn-primary">登入</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
