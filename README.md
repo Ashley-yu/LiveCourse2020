@@ -126,7 +126,10 @@
 [香水電商](https://ashley-yu.github.io/LiveCourse2020/week07/dist/index.html)
 >- animation
 >- transform
->- opacity
+>- 佔據空間
+>	- opacity 會佔據空間
+>	- display:none 不會佔據空間
+>	- visibility:hidden 消失但佔據空間
 >- [aos](https://michalsnik.github.io/aos/)
 >	- `<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
