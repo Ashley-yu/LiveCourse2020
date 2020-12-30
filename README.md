@@ -179,9 +179,9 @@
 [設計稿-大型寵物服務網](https://xd.adobe.com/view/2c355bc0-1368-4995-b20d-9882992c75b0-7966/screen/69b72d39-0e8e-4849-96a2-617108c70de1/)
 [設計稿-大型訂房網](https://xd.adobe.com/view/0cf6ec93-07a3-492f-58f2-9767ba1cfdfb-7ac7/)
 
->- 結構設計
->	- Level 1：頁面(page)， 有一頁就新增一頁
->	- Level 2：佈局(Layout)， 會額外拉出來處理
->	- Level 3：工具(helper、util)，會將常用的 class 拉出來獨立使用
->	- Level 4：格線(grid) 會有自己的格線系統
->	- Level 5：模組(component) 會將常用的內容拉出來模組化
+- 結構設計
+	- Level 1：頁面(page)， 有一頁就新增一頁
+	- Level 2：佈局(Layout)， 會額外拉出來處理
+	- Level 3：工具(helper、util)，會將常用的 class 拉出來獨立使用
+	- Level 4：格線(grid) 會有自己的格線系統
+	- Level 5：模組(component) 會將常用的內容拉出來模組化
