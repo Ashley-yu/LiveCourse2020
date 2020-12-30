@@ -4,30 +4,30 @@
 [設計稿](https://xd.adobe.com/view/0f1c0abb-4063-4ed0-96b1-452f520f878b-5a4f/)
 
 [個人履歷 ](https://ashley-yu.github.io/LiveCourse2020/week01/index.html)
-> - 盡量不寫死寬高, 使用 margin 或 padding 推擠
-> - 設定共用 class `container: 0 margin;` 左右置中, 且要設定寬度才有效
-> - 圖片下方預設留白 2~3px, 可設定`display: block;` 或 `vertical-align: middle;` 消除
+- 盡量不寫死寬高, 使用 margin 或 padding 推擠
+- 設定共用 class `container: 0 margin;` 左右置中, 且要設定寬度才有效
+- 圖片下方預設留白 2~3px, 可設定`display: block;` 或 `vertical-align: middle;` 消除
 
 ## 第二週 - Flexbox 網頁排版術
 [設計稿](https://xd.adobe.com/view/3d28af46-ac66-480d-a9a5-4b07454e6f79-687b/)
 
 [個人網站](https://ashley-yu.github.io/LiveCourse2020/week02/index.html)
->- `display: flex;`
->	- **flex-direction** 決定軸線 <br>
-> row｜row-reverse｜column｜column-reverse
->	- **justify-content** 主軸對齊 <br>
-> flex-start｜center｜flex-end｜space-between｜space-around｜space-evenly
->	- **flex-wrap** 換行屬性 <br>
-> nowrap｜wrap
->	- **align-item** 交錯軸對齊 <br>
-> flex-start｜center｜flex-end｜stretch｜baseline
-> - `background-image: url();`
->	- **background-position** 位置 <br>
-> top ｜ bottom ｜ left ｜ right ｜ center
->	- **background-size** 尺寸 <br>
-> auto ｜ contain ｜ cover
->	- **background-repeat** 重複 <br>
-> repeat(預設值)｜ repeat-x ｜ repeat-y ｜ no-repeat
+- `display: flex;`
+	- **flex-direction** 決定軸線 <br>
+ row｜row-reverse｜column｜column-reverse
+	- **justify-content** 主軸對齊 <br>
+ flex-start｜center｜flex-end｜space-between｜space-around｜space-evenly
+	- **flex-wrap** 換行屬性 <br>
+ nowrap｜wrap
+	- **align-item** 交錯軸對齊 <br>
+ flex-start｜center｜flex-end｜stretch｜baseline
+ - `background-image: url();`
+	- **background-position** 位置 <br>
+ top ｜ bottom ｜ left ｜ right ｜ center
+	- **background-size** 尺寸 <br>
+ auto ｜ contain ｜ cover
+	- **background-repeat** 重複 <br>
+ repeat(預設值)｜ repeat-x ｜ repeat-y ｜ no-repeat
 
 ## 第三週 - 響應式網頁設計
 [設計稿](https://xd.adobe.com/view/8b7a73f4-31ab-4b10-a946-00fc87dfd96e-de29/flow)
