@@ -91,17 +91,19 @@
 	- [Bootstrap 文件](https://bootstrap.hexschool.com/docs/4.2/getting-started/introduction/)
 	- 響應式圖片 [img-fluid](https://bootstrap.hexschool.com/docs/4.2/content/images/)
 - Material Icon
-	- `<link href="<https://fonts.googleapis.com/icon?family=Material+Icons>" rel="stylesheet">`
-	- ```
-	    <span class="material-icons">
-	      accessibility
-	    </span>
-	   ```
-	- ```
-	    <i class="material-icons">
-	      accessibility
-	    </i>
-	   ```
+	```
+	  <link href="<https://fonts.googleapis.com/icon?family=Material+Icons>" rel="stylesheet">
+	```
+	```
+	  <span class="material-icons">
+	    accessibility
+	  </span>
+	```
+	```
+	  <i class="material-icons">
+	    accessibility
+	  </i>
+	```
 
 ## 第六週 - 格線系統
 [設計稿](https://xd.adobe.com/view/dc5ebe5c-3e56-4981-a010-158b5ded0e72-890d/grid/)
