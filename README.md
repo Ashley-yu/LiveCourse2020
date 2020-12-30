@@ -124,21 +124,21 @@
 [設計稿](https://xd.adobe.com/view/08ed586b-17ef-45c1-525f-be5513e81e53-7edc/)
 
 [香水電商](https://ashley-yu.github.io/LiveCourse2020/week07/dist/index.html)
->- animation
->- transform
->- 佔據空間
->	- opacity 會佔據空間
->	- display:none 不會佔據空間
->	- visibility:hidden 消失但佔據空間
->- [aos](https://michalsnik.github.io/aos/)
->	- `<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+- animation
+- transform
+- 佔據空間
+	- opacity 會佔據空間
+	- display:none 不會佔據空間
+	- visibility:hidden 消失但佔據空間
+- [aos](https://michalsnik.github.io/aos/)
+	```<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
       AOS.init();
      </script>
-     `
->- AOS 單一設計
->	- `<div
+    ```
+- AOS 單一設計
+	```<div
      data-aos="fade-up"
      data-aos-offset="200"
      data-aos-delay="50"
@@ -148,9 +148,9 @@
      data-aos-once="false"
      data-aos-anchor-placement="top-center">
      </div>
-     `
->- AOS 全域設計
->	- `AOS.init({
+    ```
+- AOS 全域設計
+	```AOS.init({
      // Global settings:
      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
@@ -169,7 +169,7 @@
      mirror: false, // whether elements should animate out while scrolling past them
      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
      });
-     `
+    ```
      
 ## 第八週 - CSS模組化管理
 [設計稿-大型寵物服務網](https://xd.adobe.com/view/2c355bc0-1368-4995-b20d-9882992c75b0-7966/screen/69b72d39-0e8e-4849-96a2-617108c70de1/)
