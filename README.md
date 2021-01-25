@@ -128,6 +128,7 @@
 [設計稿](https://xd.adobe.com/view/08ed586b-17ef-45c1-525f-be5513e81e53-7edc/)
 
 [香水電商](https://ashley-yu.github.io/LiveCourse2020/week07/dist/index.html)
+[Fixie](https://ashley-yu.github.io/LiveCourse2020/week07-Fixie/dist/index.html)
 - animation
 - transform
 - 會佔據空間
