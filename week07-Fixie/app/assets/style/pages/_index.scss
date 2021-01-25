@@ -1,0 +1,15 @@
+.quote {
+  background-image: url('../../assets/images/img4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 424px;
+  padding-bottom: 77px;
+}
+
+.link {
+  &:hover {
+    cursor: pointer;
+    color: rgba($secondary, .25);
+  }
+}
