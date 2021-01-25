@@ -2,7 +2,7 @@
 
 ## 第一週 - 1 px 也不差的版型控制術
 [設計稿](https://xd.adobe.com/view/0f1c0abb-4063-4ed0-96b1-452f520f878b-5a4f/)
-
+/
 [個人履歷 ](https://ashley-yu.github.io/LiveCourse2020/week01/index.html)
 - 盡量不寫死寬高, 使用 margin 或 padding 推擠
 - 設定共用 class `container: 0 margin;` 左右置中, 且要設定寬度才有效
@@ -10,7 +10,7 @@
 
 ## 第二週 - Flexbox 網頁排版術
 [設計稿](https://xd.adobe.com/view/3d28af46-ac66-480d-a9a5-4b07454e6f79-687b/)
-
+/
 [個人網站](https://ashley-yu.github.io/LiveCourse2020/week02/index.html)
 - `display: flex;`
 	- **flex-direction** 決定軸線 <br>
@@ -31,7 +31,7 @@
 
 ## 第三週 - 響應式網頁設計
 [設計稿](https://xd.adobe.com/view/8b7a73f4-31ab-4b10-a946-00fc87dfd96e-de29/flow)
-
+/
 [RWD 網站](https://ashley-yu.github.io/LiveCourse2020/week03/index.html)
 - CSS 權重 - 先看權重，再看先後
 	- HTML 標籤：1 分
@@ -60,7 +60,7 @@
   
 ## 第四週 - 多頁式網頁設計
 [設計稿](https://xd.adobe.com/view/8b7a73f4-31ab-4b10-a946-00fc87dfd96e-de29/flow)
-
+/
 [眼鏡形象網站](https://ashley-yu.github.io/LiveCourse2020/week04/dist/index.html)
 - [Layout](https://cacoo.com/diagrams/fWdDuMY0WrfI0im7/CD531)
 - EJS 樣板語言
@@ -83,7 +83,7 @@
 
 ## 第五週 - 後台表單設計
 [設計稿](https://xd.adobe.com/view/bd869667-ead5-4620-4329-ee0709cfef9e-cbb7/grid)
-
+/
 [後台網站](https://ashley-yu.github.io/LiveCourse2020/week05/dist/assignment.html)
 - Bootstrap
 	- 使用 normalize，不需再加入 Meyerweb 的 CSS Reset
@@ -107,7 +107,7 @@
 
 ## 第六週 - 格線系統
 [設計稿](https://xd.adobe.com/view/dc5ebe5c-3e56-4981-a010-158b5ded0e72-890d/grid/)
-
+/
 [香水電商](https://ashley-yu.github.io/LiveCourse2020/week06/dist/index.html)
 - Bootstrap 4 格線系統
 	- .container、.row、.col 1~12
@@ -126,10 +126,10 @@
 
 ## 第七週 - 視差滾動
 [設計稿](https://xd.adobe.com/view/08ed586b-17ef-45c1-525f-be5513e81e53-7edc/)
-
-[香水電商](https://ashley-yu.github.io/LiveCourse2020/week07/dist/index.html)
-
+/
 [Fixie](https://ashley-yu.github.io/LiveCourse2020/week07-Fixie/dist/index.html)
+/
+[香水電商](https://ashley-yu.github.io/LiveCourse2020/week07/dist/index.html)
 - animation
 - transform
 - 會佔據空間
@@ -182,7 +182,7 @@
      
 ## 第八週 - CSS模組化管理
 [設計稿-大型寵物服務網](https://xd.adobe.com/view/2c355bc0-1368-4995-b20d-9882992c75b0-7966/screen/69b72d39-0e8e-4849-96a2-617108c70de1/)
-
+/
 [設計稿-大型訂房網](https://xd.adobe.com/view/0cf6ec93-07a3-492f-58f2-9767ba1cfdfb-7ac7/)
 
 - 結構設計
