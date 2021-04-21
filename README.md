@@ -111,6 +111,13 @@
 [香水電商](https://ashley-yu.github.io/LiveCourse2020/week06/dist/index.html)
 - Bootstrap 4 格線系統
 	- .container、.row、.col 1~12
+	- 常見錯誤
+		- 在 .col 增加寬度
+		- 在格線系統調整左右 margin 與 padding
+	- 常見觀念
+		- 可以加上下 的 margin 與 padding
+		- 最外層至少補一個 container
+		- 整體格線邏輯是一致
 - 整合 Bootstrap 4 SCSS 與自己的 SCSS
 	- 步驟一：下載 GitHub 原始檔，抓取最新版
 	- 步驟二：拉出 SCSS 使用 (可以只拉出自己想要區塊)
